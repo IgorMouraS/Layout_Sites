@@ -40,7 +40,7 @@ header .logo{
 }
 
 .action-title h2{
-	font-size: 35px;
+	font-size: 40px;
 	color: var(--color-font);
 }
 
@@ -118,6 +118,7 @@ header .logo{
 	padding: 15px 30px;
 	border-radius: 50px;
 	font-weight: bold;
+	text-decoration: none;
 }
 
 .section-3 h2{
@@ -137,12 +138,90 @@ footer{
 	align-items: center;
 	background-color: #1c2029;
 	height: 100px;
+	padding-bottom: 50px;
 }
 
 .button-footer{
 	display: inline-block;
-	padding: 15px;
-	background-color: #0772EB;
+	align-items: center;
+	padding: 15px 70px;
+	background-color: var(--color-button);
 	color: var(--color-font);
 	border-radius: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: -40px;
+}
+
+footer p{
+	color: var(--color-font);
+	font-size: 14px;
+	margin-top: 40px;	
+}
+
+@media (max-width: 420px){
+	.container{
+		max-width: 360px;
+		margin: auto;
+	}
+
+	.section-1{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.ebook img{
+		margin-right: 0px;
+		margin-top: 30px;
+	}
+
+	.action-title{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.action-title h2{
+		font-size: 20px;
+		margin-top: 60px;
+	}
+
+	.button{
+		margin-top: 30px;
+		font-size: 20px;
+	}
+
+	.section-2 h2{
+		font-size: 22px;
+		margin-top: 200px;
+	}
+
+	
+	.cards{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	
+	.card{
+		margin-top: 40px;
+		
+	}
+
+	.section-3 h2{
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.section-3 p{
+		font-size: 12px;
+	}
+
+	footer p{
+		text-align: center;
+		font-size: 12px;
+	}
 }
